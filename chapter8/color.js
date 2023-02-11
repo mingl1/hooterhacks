@@ -17,7 +17,7 @@ function color(config) {
     }
 
     if (counter === 3) {
-        // Open portal.
         document.getElementById('help').textContent="Thank you!";
+        document.getElementById('jump').src="/images/hole.jpg";
     }
 }
