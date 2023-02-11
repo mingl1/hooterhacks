@@ -23,7 +23,19 @@
 
     <p class="text" id="advice"></p>
 
+    <img id="jump" class="jump" src="/images/Blank.png" alt="hole">
+
     <!-- Scripts. -->
     <script src="advice.js"></script>
+
+    <script>
+        const hole = document.querySelector(".jump");
+        hole.addEventListener("click", () => {
+          hole.className = "jump jumpAnimation";
+          setTimeout(() => {
+            window.location.replace("/chapter6/index.html");
+          }, 2000);
+        });
+      </script>
 </body>
 </html>
