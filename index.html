@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,7 +16,6 @@
   <body
     class="text-center text-white flex justify-center align-middle flex-col"
   >
-    <!-- down the rabbit hole text -->
     <div
       class="w-full text-center font-extrabold mt-10 mix-blend-difference cursor-default"
     >
@@ -26,10 +25,18 @@
       </h1>
       <h1 class="text-7xl"><span class="text-8xl">H</span>OLE</h1>
     </div>
-    <!-- <div class="w-full flex justify-center"> -->
-    <a href="chapter2/index.html" class="cursor-default flex justify-center">
+    <a class="cursor-default flex justify-center">
       <img src="images/hole.jpg" class="hide jump" />
     </a>
-    <!-- </div> -->
+
+    <script>
+      const hole = document.querySelector(".jump");
+      hole.addEventListener("click", () => {
+        hole.className = "jump jumpAnimation";
+        setTimeout(() => {
+          window.location.replace("/chapter2/index.html");
+        }, 2000);
+      });
+    </script>
   </body>
 </html>
