@@ -22,7 +22,7 @@ html {
   50% {
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 1);
   }
-  75 {
+  75% {
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
   }
   100% {
@@ -65,10 +65,10 @@ html{
   50% {
     visibility: hidden;
   }
-  75 {
+  75% {
     /* opacity: 0.1; */
   }
-  85%{
+  85% {
     visibility: hidden;
   }
   100% {
