@@ -6,7 +6,7 @@ const d = document.querySelector('#d');
 
 a.addEventListener('click', function() {
     document.getElementById('a').innerHTML = 'Correct';
-    // Hole should appear.
+    document.getElementById('jump').src = '/images/hole.jpg';
 })
 
 b.addEventListener('click', function() {
