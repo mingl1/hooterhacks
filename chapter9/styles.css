@@ -1,0 +1,63 @@
+body, html {
+    height: 100%
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#croquet-game {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: end;
+
+}
+
+#mallet-and-ball {
+    display: flex;
+    gap: 5px;
+    align-items: end;
+}
+
+.flamingo {
+    height: 200px;
+    width: auto;
+    transform: rotate(-145deg);
+    z-index: -1;
+}
+
+.croquet-people {
+    height: 100px;
+    width: auto;
+}
+
+.hedgehog {
+    height: 100px;
+    width: auto;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cloud-container {
+    margin: 3%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cloud {
+    width: 150px;
+}
+
+.text {
+    position: absolute;
+}
