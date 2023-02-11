@@ -1,0 +1,28 @@
+body, html {
+    height: 100%
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gryphon {
+    height: 300px;
+}
+
+.mock-turtle {
+    height: 300px;
+}
+
+.song {
+    width: 300px;
+}
