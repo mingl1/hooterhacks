@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,11 +11,86 @@
     ></script>
     <link href="/chapter2/output.css" rel="stylesheet" />
   </head>
-  <body class="w-screen h-screen bg-slate-600">
+  <body class="w-full h-full">
     <model-viewer
-      src="../images/Ocean.glb"
-      alt="Ocean by Poly by Google [CC-BY] via Poly Pizza"
-      class="w-full h-full"
-    ></model-viewer>
+      src="../images/Little Man.glb"
+      poster="poster.webp"
+      shadow-intensity="1"
+      camera-orbit="-128.8deg 91.39deg 2.33m"
+      field-of-view="35.84deg"
+      camera-Target="0m 0.0m 0m"
+    >
+      <button
+        id="starve"
+        class="Hotspot"
+        slot="hotspot-2"
+        data-surface="0 6 282 284 281 0.407 0.293 0.300"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation font-bold">starve</div></button
+      ><button
+        id="eat"
+        class="Hotspot"
+        slot="hotspot-3"
+        data-surface="0 6 624 625 626 0.316 0.285 0.399"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">
+          <span class="text-white font-bold">eat the cake</span>
+        </div>
+      </button>
+      <!-- <div class="absolute w-full">
+        <img src="../images/hole.jpg" class="m-auto" />
+      </div> -->
+      <button
+        class="Hotspot"
+        slot="hotspot-4"
+        data-surface="0 4 470 468 469 0.219 0.245 0.536"
+        data-visibility-attribute="visible"
+        class="cursor-default"
+      >
+        <div class="HotspotAnnotation">
+          <img src="../images/hole.jpg" class="jump" />
+        </div>
+      </button>
+    </model-viewer>
+
+    <script>
+      const starve = document.querySelector("#starve");
+      const eat = document.querySelector("#eat");
+      const modelViewer = document.querySelector("model-viewer");
+      const hole = document.querySelector(".jump");
+      let fov = 25.84;
+      let height = 0;
+      starve.addEventListener("click", () => {
+        console.log(modelViewer);
+        fov = fov - 10;
+        modelViewer.fieldOfView = fov + "deg";
+        console.log(fov);
+        if (fov < 10) {
+          hole.className = "jump show";
+        }
+      });
+      eat.addEventListener("click", () => {
+        // console.log(modelViewer);
+        // fov = fov + 10;
+        // modelViewer.fieldOfView = fov + "deg";
+        height = height + 0.1;
+        modelViewer["cameraTarget"] = `0m ${height}m 0m`;
+        // console.log();
+        // modelViewer["cameraTarget"] = "0m 0.5m 0m";
+        console.log(hole);
+        if (height > 0.2) {
+          hole.className = "jump show";
+        }
+      });
+
+      hole.addEventListener("click", () => {
+        hole.className = "jump jumpAnimation show";
+        setTimeout(() => {
+          window.location.replace("/chapter3/index.html");
+        }, 2000);
+      });
+    </script>
   </body>
 </html>
