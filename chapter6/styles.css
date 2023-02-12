@@ -6,7 +6,6 @@
 #frame {
   width:600px;
   height:500px;
-  background:red;
   border: 25px solid transparent;
   border-image-slice: 27 27 27 27;
   border-image-width: 25px 25px 25px 25px;

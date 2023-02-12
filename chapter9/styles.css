@@ -1,7 +1,9 @@
 body, html {
     height: 100%
 }
-
+.unclickable{
+    pointer-events: none;
+}
 body {
     display: flex;
     flex-direction: column;
