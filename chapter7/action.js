@@ -1,22 +1,21 @@
-const a = document.querySelector('#a');
-const b = document.querySelector('#b');
-const c = document.querySelector('#c');
-const d = document.querySelector('#d');
+const a = document.querySelector("#a");
+const b = document.querySelector("#b");
+const c = document.querySelector("#c");
+const d = document.querySelector("#d");
 
+a.addEventListener("click", function () {
+  document.getElementById("a").innerHTML = "Correct";
+  document.getElementById("jump").style.visibility = "visible";
+});
 
-a.addEventListener('click', function() {
-    document.getElementById('a').innerHTML = 'Correct';
-    document.getElementById('jump').src = '/images/hole.jpg';
-})
+b.addEventListener("click", function () {
+  document.getElementById("b").innerHTML = "Close yet so far.";
+});
 
-b.addEventListener('click', function() {
-    document.getElementById('b').innerHTML = 'Close yet so far.';
-})
+c.addEventListener("click", function () {
+  document.getElementById("c").innerHTML = "Hm...";
+});
 
-c.addEventListener('click', function() {
-    document.getElementById('c').innerHTML = 'Hm...';
-})
-
-d.addEventListener('click', function() {
-    document.getElementById('d').innerHTML = 'Brain not the sharpest I see.';
-})
+d.addEventListener("click", function () {
+  document.getElementById("d").innerHTML = "Brain not the sharpest I see.";
+});
