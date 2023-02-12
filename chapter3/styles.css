@@ -7,6 +7,8 @@ h3 {
     border-radius: 50%;
     width: 200px;
     height: 200px;
+    animation: none;
+    animation-fill-mode: none;
 }
 .jumpAnimation{
     animation: jumpped 2s;
@@ -49,6 +51,7 @@ img {
     font-weight: bold;
     position: relative;
     animation: mymove 3s;
+    animation-fill-mode: forwards;
   }
   
   #img1 {animation-timing-function: linear;}

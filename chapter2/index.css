@@ -60,3 +60,6 @@ model-viewer{
 .show{
   visibility: visible;
 }
+.hide{
+  visibility: hidden;
+}

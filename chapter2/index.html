@@ -17,7 +17,7 @@
       poster="poster.webp"
       shadow-intensity="1"
       camera-orbit="-128.8deg 91.39deg 2.33m"
-      field-of-view="35.84deg"
+      field-of-view="25.84deg"
       camera-Target="0m 0.0m 0m"
     >
       <button
@@ -64,24 +64,32 @@
       let height = 0;
       starve.addEventListener("click", () => {
         console.log(modelViewer);
-        fov = fov - 10;
-        modelViewer.fieldOfView = fov + "deg";
-        console.log(fov);
-        if (fov < 10) {
-          hole.className = "jump show";
+        if (height <= 0) {
+          fov = fov - 10;
+          modelViewer.fieldOfView = fov + "deg";
+          if (fov < 10) {
+            hole.className = "jump show";
+            starve.classList.add("hide");
+
+            eat.classList.add("hide");
+          }
+        } else {
+          height = height - 0.1;
+          modelViewer["cameraTarget"] = `0m ${height}m 0m`;
         }
       });
       eat.addEventListener("click", () => {
-        // console.log(modelViewer);
-        // fov = fov + 10;
-        // modelViewer.fieldOfView = fov + "deg";
-        height = height + 0.1;
-        modelViewer["cameraTarget"] = `0m ${height}m 0m`;
-        // console.log();
-        // modelViewer["cameraTarget"] = "0m 0.5m 0m";
-        console.log(hole);
-        if (height > 0.2) {
-          hole.className = "jump show";
+        if (fov > 25) {
+          height = height + 0.1;
+          modelViewer["cameraTarget"] = `0m ${height}m 0m`;
+          if (height > 0.2) {
+            hole.className = "jump show";
+            eat.classList.add("hide");
+            starve.classList.add("hide");
+          }
+        } else {
+          fov = fov + 10;
+          modelViewer.fieldOfView = fov + "deg";
         }
       });
 
