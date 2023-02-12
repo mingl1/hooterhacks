@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Chapter 10</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div class="fake-body">
-            <h1>Amongst Gryphon and Mock Turtle, who do you want to sing?</h1>
-            <div class="container">
-                <img class="gryphon" src="../images/gryphon.jpeg" alt="Gryphon looking right">
-                <div class="song"></div>
-                <img class="mock-turtle" src="../images/mock-turtle.png" alt="Mock Turtle looking left">
-            </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chapter 10</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="center">
+    <div class="fake-body">
+      <h1>Amongst Gryphon and Mock Turtle, who do you want to sing?</h1>
+      <div class="container">
+        <img
+          class="gryphon"
+          src="../images/gryphon.jpeg"
+          alt="Gryphon looking right"
+        />
+        <div class="song"></div>
+        <img
+          class="mock-turtle"
+          src="../images/mock-turtle.png"
+          alt="Mock Turtle looking left"
+        />
+      </div>
+    </div>
+    <div class="centering">
+      <img id="jump" class="jump" src="/images/Blank.png" alt="hole" />
+    </div>
 
-        <img id="jump" class="jump" src="/images/Blank.png" alt="hole">
-        <script src="javascript.js"></script>
+    <script src="javascript.js"></script>
 
-        <script>
-            const hole = document.querySelector(".jump");
-            hole.addEventListener("click", () => {
-              hole.className = "jump jumpAnimation";
-              setTimeout(() => {
-                window.location.replace("/chapter11/index.html");
-              }, 2000);
-            });
-          </script>
-    </body>
+    <script>
+      const hole = document.querySelector(".jump");
+      hole.addEventListener("click", () => {
+        hole.className = "jump jumpAnimation";
+        setTimeout(() => {
+          window.location.replace("/chapter11/index.html");
+        }, 2000);
+      });
+    </script>
+  </body>
 </html>

@@ -8,6 +8,19 @@ body {
     font-size: 60px;
 }
 
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Zeyada';
+  }
+
+
 .jump{
     cursor: url("images/jump.png"), auto;
     border-radius: 50%;
@@ -42,7 +55,7 @@ body {
           /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); */
     }
     100% {
-      transform: scale(4) rotate(1080deg);
+      transform: scale(24) rotate(1080deg);
       /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0); */
     }
   }

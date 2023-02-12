@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Chapter 9</title>
-        <link rel="stylesheet" href="./styles.css">
-    </head>
-    <body>
-        <div>
-            <h1 class="text"> Fool! You swung too slow! We have much more to do so hurry along now.</h1>
-            <img id="jump" class="jump" src="/images/hole.jpg" alt="hole">
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chapter 9</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="center">
+      <h1 class="text">
+        Fool! You swung too slow! We have much more to do so hurry along now.
+      </h1>
+      <img id="jump" class="jump" src="/images/hole.jpg" alt="hole" />
+    </div>
+    <div class="">
+      <img class="queen" src="../../images/queen.webp" />
+    </div>
 
-        <img class="queen" src="../../images/queen.webp">
-
-        <script>
-            const hole = document.querySelector(".jump");
-            hole.addEventListener("click", () => {
-              hole.className = "jump jumpAnimation";
-              setTimeout(() => {
-                window.location.replace("/chapter10/index.html");
-              }, 2000);
-            });
-          </script>
-    </body>
+    <script>
+      const hole = document.querySelector(".jump");
+      hole.addEventListener("click", () => {
+        hole.className = "jump jumpAnimation";
+        setTimeout(() => {
+          window.location.replace("/chapter10/index.html");
+        }, 2000);
+      });
+    </script>
+  </body>
 </html>
