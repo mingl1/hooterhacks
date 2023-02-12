@@ -2,8 +2,21 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
         <h1>you greedy lil piglet!</h1>
+
+        <img class="jump" src="/images/hole.jpg" alt="hole">
     </body>
+
+    <script>
+        const hole = document.querySelector(".jump");
+        hole.addEventListener("click", () => {
+          hole.className = "jump jumpAnimation";
+          setTimeout(() => {
+            window.location.replace("/chapter5/index.html");
+          }, 2000);
+        });
+      </script>
 </html>
