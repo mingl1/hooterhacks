@@ -2,6 +2,9 @@
     position: relative;
     height: 100vh;
   }
+  body{
+    background-color: #f7f7f7;
+  }
   
   #floating-image {
     position: absolute;

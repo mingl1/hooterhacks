@@ -12,8 +12,7 @@ function moveImage() {
 
 setInterval(moveImage, 1000);
 
-
-const cake = document.querySelector('.cake');
-cake.addEventListener('click', function() {
-    window.location.replace('end/end.html')
-})
+const cake = document.querySelector(".cake");
+cake.addEventListener("click", function () {
+  window.location.replace("end/end.html");
+});
