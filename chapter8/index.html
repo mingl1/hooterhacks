@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Queen's Croquet Ground</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body class="center">
     <h1 id="help">Help Wanted!</h1>
     <h3>Color the roses.</h3>
-    <img id="rose1" src="/images/WhiteRose.png" alt="White Rose" onclick="color(1)">
-    <img id="rose2" src="/images/WhiteRose.png" alt="White Rose" onclick="color(2)">
-    <img id="rose3" src="/images/WhiteRose.png" alt="White Rose" onclick="color(3)">
-
-    <img id="jump" class="jump" src="/images/Blank.png" alt="hole">
+    <div>
+      <img
+        id="rose1"
+        src="/images/WhiteRose.png"
+        alt="White Rose"
+        onclick="color(1)"
+      />
+      <img
+        id="rose2"
+        src="/images/WhiteRose.png"
+        alt="White Rose"
+        onclick="color(2)"
+      />
+      <img
+        id="rose3"
+        src="/images/WhiteRose.png"
+        alt="White Rose"
+        onclick="color(3)"
+      />
+    </div>
+    <img id="jump" class="jump" src="/images/Blank.png" alt="hole" />
 
     <!-- Scripts. -->
     <script src="color.js"></script>
 
     <script>
-        const hole = document.querySelector(".jump");
-        hole.addEventListener("click", () => {
-          hole.className = "jump jumpAnimation";
-          setTimeout(() => {
-            window.location.replace("/chapter9/index.html");
-          }, 2000);
-        });
-      </script>
-</body>
+      const hole = document.querySelector(".jump");
+      hole.addEventListener("click", () => {
+        hole.className = "jump jumpAnimation";
+        setTimeout(() => {
+          window.location.replace("/chapter9/index.html");
+        }, 2000);
+      });
+    </script>
+  </body>
 </html>
