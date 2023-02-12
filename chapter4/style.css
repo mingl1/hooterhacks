@@ -1,0 +1,20 @@
+.container {
+    position: relative;
+    height: 100vh;
+  }
+  
+  #floating-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top 1s ease-in-out, left 1s ease-in-out;
+  }
+
+  .cake {
+    height: 150px;
+    width: auto;
+  }
+  
+  .text {
+    text-align: center;
+  }
