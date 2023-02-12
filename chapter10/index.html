@@ -14,6 +14,18 @@
                 <img class="mock-turtle" src="../images/mock-turtle.png" alt="Mock Turtle looking left">
             </div>
         </div>
+
+        <img id="jump" class="jump" src="/images/Blank.png" alt="hole">
         <script src="javascript.js"></script>
+
+        <script>
+            const hole = document.querySelector(".jump");
+            hole.addEventListener("click", () => {
+              hole.className = "jump jumpAnimation";
+              setTimeout(() => {
+                window.location.replace("/chapter11/index.html");
+              }, 2000);
+            });
+          </script>
     </body>
 </html>

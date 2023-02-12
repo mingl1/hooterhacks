@@ -9,5 +9,5 @@ yes.addEventListener('click', function() {
 })
 
 no.addEventListener('click', function() {
-    output.innerHTML = "You're wrong, please try again!";
+    output.innerHTML = "YOU LIARRRRRR.";
 })

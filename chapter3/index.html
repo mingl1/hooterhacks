@@ -4,7 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>A Caucus-Race And A Long Tale</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
-  <body></body>
+  <body>
+    <p>Quality may or may not be this good going down the rest of the hole.</p>
+    <h1>Race of the Century!!!</h1>
+    <div>
+      <img id="img1" class="race" src="/images/mouse.jpeg"></img>
+      <img id="img2" class="race" src="/images/alice.webp"></img>
+      <img id="img3" class="race" src="/images/crab.jpeg"></img>
+      <img id="img4" class="race" src="/images/owl.jpeg"></img>
+    </div>  
+    <h3 class="winner">You Won!</h3>
+    <img id="hole" class="jump" src="/images/Blank.png" alt="hole">
+
+    <script>
+      setTimeout(() => {
+        document.querySelector(".winner").style.visibility="visible";
+        document.getElementById("hole").src="/images/hole.jpg";
+      }, 3000);
+
+      const hole = document.querySelector(".jump");
+      hole.addEventListener("click", () => {
+        hole.className = "jump jumpAnimation";
+        setTimeout(() => {
+          window.location.replace("/chapter4/index.html");
+        }, 2000);
+      });
+    </script>
+  </body>
 </html>

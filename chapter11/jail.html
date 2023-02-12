@@ -7,5 +7,17 @@
     </head>
     <body>
         <h1 id="text">Yes! You indeed did steal it you thief! <br>Get sent to jail!</h1>
+
+        <img class="jump" src="/images/hole.jpg" alt="hole">
+
+        <script>
+            const hole = document.querySelector(".jump");
+            hole.addEventListener("click", () => {
+              hole.className = "jump jumpAnimation";
+              setTimeout(() => {
+                window.location.replace("/chapter12/index.html");
+              }, 2000);
+            });
+          </script>
     </body>
 </html>

@@ -34,8 +34,10 @@ const text = document.querySelector('.song');
 
 gryphon.addEventListener('click', function() {
     text.innerHTML = g_turtle;
+    document.getElementById('jump').src="/images/hole.jpg";
 })
 
 turtle.addEventListener('click', function() {
     text.innerHTML = t_song;
+    document.getElementById('jump').src="/images/hole.jpg";
 })
