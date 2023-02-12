@@ -15,7 +15,9 @@ model-viewer{
   height: 100vh;
   background-color: black;
 }
-
+.eat{
+  font-size: large;
+}
 
 .jump{
   cursor: url("images/jump.png"), auto;
@@ -52,7 +54,7 @@ model-viewer{
         /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); */
   }
   100% {
-    transform: scale(4) rotate(1080deg);
+    transform: scale(25) rotate(1080deg);
     /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0); */
   }
 }

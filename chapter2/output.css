@@ -605,6 +605,10 @@ model-viewer{
   background-color: black;
 }
 
+.eat{
+  font-size: large;
+}
+
 .jump{
   cursor: url("images/jump.png"), auto;
   border-radius: 50%;
@@ -646,7 +650,7 @@ model-viewer{
   }
 
   100% {
-    transform: scale(4) rotate(1080deg);
+    transform: scale(25) rotate(1080deg);
     /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0); */
   }
 }
