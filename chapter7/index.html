@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A Mad Tea-Party</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    <img src="/images/madHatter.webp" alt="madHatter">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body class="center">
+    <img src="/images/madHatter.webp" alt="madHatter" class="rounded" />
     <div>
-        <h1>Hello! </h1>
-        <p>Mad Hatter am I. Solve my riddle you will. To pass you shall.
+      <h1>Hello!</h1>
+      <p>Mad Hatter am I. Solve my riddle you will. To pass you shall.</p>
     </div>
 
     <div>
-        <p>Queen of Hearts: We both never lie.<br>King of Hearts: She lies.<br>Who lies?</p>
+      <p>
+        Queen of Hearts: We both never lie.<br />King of Hearts: She lies.<br />Who
+        lies?
+      </p>
     </div>
 
     <div class="riddle">
-        <button id="a">Queen of Hearts</button> <br>
-        <button id="b">King of Hearts</button> <br>
-        <button id="c">Both</button> <br>
-        <button id="d">None</button> <br>
+      <button id="a">Queen of Hearts</button> <br />
+      <button id="b">King of Hearts</button> <br />
+      <button id="c">Both</button> <br />
+      <button id="d">None</button> <br />
     </div>
 
-    <img id="jump" class="jump" src="/images/Blank.png" alt="hole">
+    <img id="jump" class="jump" src="/images/Blank.png" alt="hole" />
 
     <!-- Scripts. -->
     <script src="action.js"></script>
 
     <script>
-        const hole = document.querySelector(".jump");
-        hole.addEventListener("click", () => {
-          hole.className = "jump jumpAnimation";
-          setTimeout(() => {
-            window.location.replace("/chapter8/index.html");
-          }, 2000);
-        });
-      </script>
-</body>
+      const hole = document.querySelector(".jump");
+      hole.addEventListener("click", () => {
+        hole.className = "jump jumpAnimation";
+        setTimeout(() => {
+          window.location.replace("/chapter8/index.html");
+        }, 2000);
+      });
+    </script>
+  </body>
 </html>

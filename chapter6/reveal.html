@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reveal</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    <h1>Congrats! Your clicking skills are superior.</h1>
-    <img class="savedBaby" src="/images/savedBaby.jpeg" alt="Baby?">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body class="center forest">
+    <h1 class="top">Congrats! Your clicking skills are superior.</h1>
+    <img class="savedBaby" src="/images/savedBaby.jpeg" alt="Baby?" />
     <p>Wait a minute... This isn't a human baby.</p>
 
-    <img class="jump" src="/images/hole.jpg" alt="hole">
+    <img class="jump" src="/images/hole.jpg" alt="hole" />
 
     <script>
-        const hole = document.querySelector(".jump");
-        hole.addEventListener("click", () => {
-          hole.className = "jump jumpAnimation";
-          setTimeout(() => {
-            window.location.replace("/chapter7/index.html");
-          }, 2000);
-        });
-      </script>
-</body>
+      const hole = document.querySelector(".jump");
+      hole.addEventListener("click", () => {
+        hole.className = "jump jumpAnimation";
+        setTimeout(() => {
+          window.location.replace("/chapter7/index.html");
+        }, 2000);
+      });
+    </script>
+  </body>
 </html>
